@@ -1,1 +1,3 @@
-# asyncsslchannel
+This project contains an implementation of the Java interface java.nio.channels.AsynchronousByteChannel which provides secure communication using protocols like TLS over a non-secure channel.
+
+Along with the AsynchronousSSLByteChannel class, two sample applications are provided for testing it. The code for class SimpleHttpsClient issues a request to the Google website over TLS to retrieve its index page and prints the downloaded content to the standard output. The https server provided in class SimpleHttpsServer may be accessed from a web browser by browsing https://localhost/index.html. Before using it, you may need to import the self-signed certificate contained at file certificate.crt, otherwise your browser might reject the connection.
